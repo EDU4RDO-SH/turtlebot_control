@@ -43,4 +43,4 @@ $ roslaunch turtlebot_linear_control linear_control_path1.launch
 
 
 
-<p align="center"><img src="https://i.imgur.com/fLj2PQn.png" width="400" /></p>
+<p align="center"><img src="https://i.imgur.com/fLj2PQn.png" width="1000" /></p>
