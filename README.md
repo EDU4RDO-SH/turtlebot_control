@@ -8,7 +8,7 @@ The purpose of this set of packages is to perform the linear control of the Turt
 ## Setup
 
 ### 1. Turtlebot3 driver installation
-First of all, it is necessary to set the driver up which is in charge of controlling the actuators and reading the sensors. If you want to test the controller in a real platform you have to configure the robot computer as well as the remote PC properly, a detailed description of the entire process can be found in the official site of the project Turtlebot3 in the [setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup) tab. In the other hand, if you wish to test the controller inside the Gazebo enviroment you need to download the corresponding packages, also from the official site in the [simulation](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#ros-1-simulation) tab.
+First of all, it is necessary to set the driver up, which is in charge of controlling the actuators and reading the sensors. If you want to test the controller in a real platform you have to configure the robot computer as well as the remote PC properly, a detailed description of the entire process can be found in the official site of the project Turtlebot3 in the [setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup) tab. In the other hand, if you wish to test the controller inside the Gazebo enviroment you need to download the corresponding packages, also from the official site in the [simulation](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#ros-1-simulation) tab.
 
 
 ### 2. Clone the repository
