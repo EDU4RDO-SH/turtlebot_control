@@ -1,0 +1,6 @@
+# TurtleBot3 Waffle PI dynamic parameters
+
+speed_max: 0.13         # rated linear speed
+omega_max: 0.91         # rated angular speed
+accel_max: 0.25         # rated linear acceleration
+alpha_max: 0.32         # rated angular acceleration

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<!-- Loading parameters -->
+		<rosparam file="$(find pub_desired_states)/params/turtlebot3_wpi.yaml" command="load"/>
+	
+	<!-- Run pub_desired_states node-->
+		<node pkg="pub_desired_states" type="pub_desired_states" name="pub_desired_states_node" output="screen"/>
+
+	<!-- Run turtlebot_linear_control node -->
+    <node pkg="turtlebot_linear_control" type="turtlebot_linear_control" name="turtlebot_linear_control_node" output="screen"/>
+
+	<!-- Run pub_desired_path_client_square node -->
+    <node pkg="pub_desired_states" type="pub_desired_path_client_square" name="pub_desired_path_client_square_node" output="screen">
+			<param name="square_size" value="2.0" />
+		</node>
+
+
+</launch>

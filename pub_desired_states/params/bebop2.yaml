@@ -1,0 +1,6 @@
+# Bebop2 dynamic parameters
+
+speed_max: 0.5         # rated linear speed
+omega_max: 0.5         # rated angular speed
+accel_max: 0.5         # rated linear acceleration
+alpha_max: 0.5         # rated angular acceleration

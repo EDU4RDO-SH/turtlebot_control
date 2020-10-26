@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<!-- Load parameters to parameter server -->		
+		<rosparam command="load" file="$(find pub_desired_states)/params/turtlebot3_wpi.yaml"/>
+
+	<!-- Run pub_desired_states node -->
+    <node pkg="pub_desired_states" type="pub_desired_states" name="pub_desired_states_node" output="screen"/>
+
+	<!-- Run open_loop_controller node -->
+    <node pkg="pub_desired_states" type="open_loop_controller" name="open_loop_controller_node" output="screen"/>
+
+	<!-- Run pub_desired_path_client node -->
+    <node pkg="pub_desired_states" type="pub_desired_path_client" name="pub_desired_path_client_node" output="screen"/>
+
+</launch>
