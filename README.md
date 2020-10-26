@@ -2,7 +2,7 @@
 The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot. The ```pub_desired_states``` package computes the desired states taking into account physical and actuator limitations. The ```turtlebot_linear_control``` package subscribes to the ```/odom``` topic, computes the adequate control signals and publish them to the ```cmd_vel``` topic.  
 
 
-<p align="center"><img src="https://i.imgur.com/rMxmCAu.png" width="1000" /></p>
+<p align="center"><img src="https://i.imgur.com/rMxmCAu.png" width="800" /></p>
 
 ## Setup
 
