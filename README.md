@@ -1,5 +1,6 @@
 # turtlebot_control
-The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot. The ```pub_desired_states``` package computes the desired states taking into account physical and actuator limitations. The ```turtlebot_linear_control``` package subscribes to the ```/odom``` topic, computes the adequate control signals and publish them to the ```cmd_vel``` topic.  
+The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot. The ```pub_desired_states``` package computes the desired states taking into account physical and dynamic limitations. The ```turtlebot_linear_control``` package subscribes to the ```/odom``` topic, computes the adequate control signals and publish them to the ```cmd_vel``` topic.
+
 
 
 <p align="center"><img src="https://i.imgur.com/rMxmCAu.png" width="800" /></p>
@@ -11,7 +12,7 @@ First of all, it is necessary to set the driver up which is in charge of control
 
 
 ### 2. Clone the repository
-The entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/turtlebot_control.git``` and compile the code with ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Bebop 2, ROS Kinetic, and Ubuntu 16.04.
+The entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/turtlebot_control.git``` and compile the code with ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Turtlebot3 Waffle PI, ROS Kinetic, and Ubuntu 16.04.
 
 
 
@@ -25,11 +26,10 @@ First, execute the robot driver in a terminal:
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-Then launch the control algorithm in another terminal window, in that moment the robot will start moving following the reference.
+Then, launch the control algorithm in another terminal window, in that moment the robot will start moving following the reference.
 ```
 $ roslaunch turtlebot_linear_control linear_control_path1.launch
 ```
-
 
 
 The control performance can be seen in the next [video](https://www.youtube.com/watch?v=gjtTbT0YgIY).
@@ -37,14 +37,14 @@ The control performance can be seen in the next [video](https://www.youtube.com/
 
 
 ### Simulation
-If you want to test the control algorithm in simulation execute the vitual robot with the following commands.
+If you want to test the control algorithm in Gazebo you have to launch the vitual robot with the following commands.
 
 ```
 $ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 ```
 
-Next, launch the controller.
+Next, execute the linear controller.
 
 ```
 $ roslaunch turtlebot_linear_control linear_control_path1.launch
@@ -54,5 +54,3 @@ Similary the robot will track the desired trajectory.
 
 
 <p align="center"><img src="https://i.imgur.com/fLj2PQn.png" width="1000" /></p>
-
-<p align="center"><img src="https://i.imgur.com/ke34wZ5.png" width="500" /></p>
