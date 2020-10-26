@@ -1,15 +1,15 @@
 # turtlebot_control
-The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot. The entire repository should be cloned to ```~/catkin_ws/src```. To do so, navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/EDU4RDO-SH/turtlebot_control.git```. Then, navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Bebop 2, ROS Kinetic, and Ubuntu 16.04.
+The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot.  
 
 
 ## Setup
 
 ### 1. Turtlebot3 driver installation
-First of all, it is necessary to set the driver up which is in charge of controlling the actuators and reading the sensors. If you want to test the controller in a real platform you have to configure the robot computer as well as the remote PC properly, a detailed description of the entire process can be found in the official site of the project Turtlebot3 in the [setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup) tab. In the other hand, if you wish to test the controller inside the Gazebo enviroment you need to download the corresponding packages, also from the official site in the [simulation](https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup) tab.
+First of all, it is necessary to set the driver up which is in charge of controlling the actuators and reading the sensors. If you want to test the controller in a real platform you have to configure the robot computer as well as the remote PC properly, a detailed description of the entire process can be found in the official site of the project Turtlebot3 in the [setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup) tab. In the other hand, if you wish to test the controller inside the Gazebo enviroment you need to download the corresponding packages, also from the official site in the [simulation](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#ros-1-simulation) tab.
 
 
-### 3. Clone the repository
-Next, the entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/turtlebot_control.git``` and compile the code with ```catkin_make```.
+### 2. Clone the repository
+The entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/turtlebot_control.git``` and compile the code with ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Bebop 2, ROS Kinetic, and Ubuntu 16.04.
 
 
 
