@@ -30,7 +30,7 @@ Then launch the control algorithm in another terminal window, in that moment the
 $ roslaunch turtlebot_linear_control linear_control_path1.launch
 ```
 
-<p align="center"><img src="https://i.imgur.com/ke34wZ5.png" width="800" /></p>
+<p align="center"><img src="https://i.imgur.com/ke34wZ5.png" width="400" /></p>
 
 The control performance can be seen in the next [video](https://www.youtube.com/watch?v=gjtTbT0YgIY).
 
