@@ -18,12 +18,12 @@ The entire repository should be cloned to ```~/catkin_ws/src``` by entering the 
 ### Real platform
 
 ```
-roslaunch turtlebot3_bringup turtlebot3_robot.launch
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
 
 ```
-roslaunch turtlebot_linear_control linear_control_path1.launch
+$ roslaunch turtlebot_linear_control linear_control_path1.launch
 ```
 
 [video](https://www.youtube.com/watch?v=gjtTbT0YgIY)
@@ -33,12 +33,12 @@ roslaunch turtlebot_linear_control linear_control_path1.launch
 ### Simulation
 
 ```
-export TURTLEBOT3_MODEL=waffle_pi
-roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+$ export TURTLEBOT3_MODEL=waffle_pi
+$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 ```
 
 ```
-roslaunch turtlebot_linear_control linear_control_path1.launch
+$ roslaunch turtlebot_linear_control linear_control_path1.launch
 ```
 
 
