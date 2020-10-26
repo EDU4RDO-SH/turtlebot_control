@@ -1,27 +1,15 @@
-# bebop_ros_examples
-
+# turtlebot_control
 The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot. The entire repository should be cloned to ```~/catkin_ws/src```. To do so, navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/EDU4RDO-SH/turtlebot_control.git```. Then, navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Bebop 2, ROS Kinetic, and Ubuntu 16.04.
-
-
-## Dependencies
-The listed examples depend on the following external packages:
-
-- [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#bebop-autonomy-ros-driver-for-parrot-bebop-drone-quadrocopter-1-0-2-0)
-- [joy](https://wiki.ros.org/joy)
-- [mav_msgs](https://wiki.ros.org/mav_msgs)
 
 
 ## Setup
 
-### 1. Driver installation
-A detailed description of the correct installation of the Bebop driver can be found [here](https://bebop-autonomy.readthedocs.io/en/latest/installation.html#installation).
+### 1. Turtlebot3 driver installation
+First of all, it is necessary to set the driver up which is in charge of controlling the actuators and reading the sensors. If you want to test the controller in a real platform you have to configure the robot computer as well as the remote PC properly, a detailed description of the entire process can be found in the official site of the project Turtlebot3 in the [setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup) tab. In the other hand, if you wish to test the controller inside the Gazebo enviroment you need to download the corresponding packages, also from the official site in the [simulation](https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup) tab.
 
-
-### 2. Install dependencies
-Navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/ethz-asl/mav_comm.git```, then navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. The previous steps will install the ```mav_comm``` package which includes the ```mav_msgs``` set of messages.
 
 ### 3. Clone the repository
-Next, the entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/bebop_ros_examples.git``` and compile the code with ```catkin_make```.
+Next, the entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/turtlebot_control.git``` and compile the code with ```catkin_make```.
 
 
 
