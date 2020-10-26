@@ -1,5 +1,5 @@
 # turtlebot_control
-The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot.  
+The purpose of this set of packages is to perform the linear control of the Turtlebot3 Waffle PI for trajectory tracking. The main algorithm is based on a linear proportional control which uses the linearized model of the robot. The ```pub_desired_states``` package computes the desired states taking into account physical and actuator limitations. The ```turtlebot_linear_control``` package subscribes to the ```/odom``` topic, computes the adequate control signals and publish them to the ```cmd_vel``` topic.  
 
 
 ## Setup
@@ -16,31 +16,37 @@ The entire repository should be cloned to ```~/catkin_ws/src``` by entering the 
 ## Usage
 
 ### Real platform
+First, execute the robot driver in a terminal:
+
 
 ```
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-
+Then launch the control algorithm in another terminal window, in that moment the robot will start moving following the reference.
 ```
 $ roslaunch turtlebot_linear_control linear_control_path1.launch
 ```
 
-[video](https://www.youtube.com/watch?v=gjtTbT0YgIY)
+The control performance can be seen in the next [video](https://www.youtube.com/watch?v=gjtTbT0YgIY).
 
 
 
 ### Simulation
+If you want to test the control algorithm in simulation execute the vitual robot with the following commands.
 
 ```
 $ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 ```
 
+Next, launch the controller.
+
 ```
 $ roslaunch turtlebot_linear_control linear_control_path1.launch
 ```
 
+Similary the robot will track the desired trajectory.
 
 
 <p align="center"><img src="https://i.imgur.com/fLj2PQn.png" width="1000" /></p>
